@@ -1,4 +1,5 @@
 Official source: https://github.com/HeinzJiao/ACPV-Net
-Commit: cf28ca7adbabd653d39a7a3847eb160096fb200b
-Local addition: optional W&B monitoring in scripts/train_iter.py and topomapper/utils/wandb_monitor.py
-No training or model adaptation has been performed.
+Base commit: cf28ca7adbabd653d39a7a3847eb160096fb200b
+This copy includes experiment compatibility changes: optional W&B tracking, BF16/checkpoint compatibility, IRSAMap loader registration, and pixel-edge polygon handling.
+The eight-class classifier/loss adaptation and staged fine-tuning entry point are in program/irsamap8_runtime.py and program/train_irsamap8.py at the project root.
+Formal training completed 31000 updates; the validation-selected checkpoint is global step25000. See manifests/provenance.json and reports/.
