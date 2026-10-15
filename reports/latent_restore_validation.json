@@ -1,0 +1,20 @@
+{
+  "public_latent_stream_restore_verified": true,
+  "standard_gzip_file_plus_streaming_tar_reader": true,
+  "crossed_multiple_parallel_gzip_member_boundaries": true,
+  "sample_tensors_sha256_equal_source": true,
+  "checked": [
+    {
+      "path": "train/heatmap_augmented_latent_kl-4/flip_anti_diag/z/2512_x0512_y0512.pt",
+      "tar_offset": 512
+    },
+    {
+      "path": "train/heatmap_augmented_latent_kl-4/flip_anti_diag/z/2525_x0000_y0512.pt",
+      "tar_offset": 9958912
+    },
+    {
+      "path": "train/heatmap_augmented_latent_kl-4/flip_anti_diag/z/2537_x0512_y0512.pt",
+      "tar_offset": 19917312
+    }
+  ]
+}

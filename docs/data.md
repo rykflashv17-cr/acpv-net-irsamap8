@@ -21,3 +21,5 @@ python program/prepare_dataset.py validate
 ```
 
 Alternatively download the prepared core archives and optional latent archives through `program/download_artifacts.py`. Files restore the same folder layout; train/val/test remain separate. Archives contain regular files and can be restored without the original hardlink source.
+
+Some archives use standard concatenated gzip members for parallel compression. The provided downloader uses `tarfile.open(path, 'r:*')`, which handles these archives. For custom HTTP streaming, wrap the response in `gzip.GzipFile(fileobj=response.raw)` and pass that decoded stream to `tarfile.open(fileobj=decoded, mode='r|')`; Python's direct `r|gz` stream mode does not handle concatenated members.
