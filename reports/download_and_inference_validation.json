@@ -1,0 +1,29 @@
+{
+  "checkpoint": "weights/model.pth",
+  "checkpoint_step": 25000,
+  "class_names": [
+    "farmland",
+    "tree",
+    "grass",
+    "water",
+    "building",
+    "road_area",
+    "sport",
+    "bareland"
+  ],
+  "ddim_steps": 200,
+  "coordinate_system": "pixel_boundary",
+  "ground_truth_used": false,
+  "quality": {
+    "id": "rgb",
+    "gap_pixels": 0,
+    "overlap_pixels": 0,
+    "invalid_polygons": 0,
+    "polygons": 74,
+    "ground_truth_used": false
+  },
+  "downloaded_from": "Flash2718/acpv-net-irsamap8",
+  "model_sha256": "1d444768cf06977149d91efbee158d740e1d3d44acaea77317abf0cb9b08dece",
+  "external_workspace_initialization_verified": true,
+  "full_200_step_vector_inference_passed": true
+}
