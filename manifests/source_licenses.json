@@ -1,0 +1,278 @@
+{
+  "verified_source_url": "https://www.scidb.cn/en/detail?dataSetId=8bd48587da7e476a8ba3bc809321a7af&version=V1",
+  "retrieved_date": "2026-10-15",
+  "structured_metadata": [
+    {
+      "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/",
+        "citeAs": "cr:citeAs",
+        "column": "cr:column",
+        "conformsTo": "dct:conformsTo",
+        "cr": "http://mlcommons.org/croissant/",
+        "data": {
+          "@id": "cr:data",
+          "@type": "@json"
+        },
+        "dataType": {
+          "@id": "cr:dataType",
+          "@type": "@vocab"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "examples": {
+          "@id": "cr:examples",
+          "@type": "@json"
+        },
+        "extract": "cr:extract",
+        "field": "cr:field",
+        "fileObject": "cr:fileObject",
+        "fileProperty": "cr:fileProperty",
+        "fileSet": "cr:fileSet",
+        "format": "cr:format",
+        "includes": "cr:includes",
+        "isLiveDataset": "cr:isLiveDataset",
+        "jsonPath": "cr:jsonPath",
+        "key": "cr:key",
+        "md5": "cr:md5",
+        "parentField": "cr:parentField",
+        "path": "cr:path",
+        "rai": "http://mlcommons.org/croissant/RAI/",
+        "recordSet": "cr:recordSet",
+        "references": "cr:references",
+        "regex": "cr:regex",
+        "repeated": "cr:repeated",
+        "replace": "cr:replace",
+        "sc": "https://schema.org/",
+        "separator": "cr:separator",
+        "source": "cr:source",
+        "subField": "cr:subField",
+        "transform": "cr:transform",
+        "wd": "https://www.wikidata.org/wiki/"
+      },
+      "@id": "https://doi.org/10.57760/sciencedb.j00240.00047",
+      "@type": "sc:Dataset",
+      "citeAs": "@data{ 8bd48587da7e476a8ba3bc809321a7af,\n  title        = {{IRSAMap:Towards Large-Scale, High-Resolution Land Cover Map Vectorization}},\n  author       = {{Meng Yu and Deng Ligao and Xi Zhihao and Chen Jiansheng and Chen Jingbo and Yue Anzhi and Liu Diyou and Li Kai and Wang Chenhao and Li Kaiyu and deng yu peng and Sun Xian}},\n  year        = {{2025}},\n  month       = {{October}},\n  publisher   = {{Science Data Bank}},\n  doi         = {{10.57760/sciencedb.j00240.00047}},\n  url         = {{https://doi.org/10.57760/sciencedb.j00240.00047}},\n  version     = {{V1}}\n}",
+      "conditionsOfAccess": "PUBLIC",
+      "conformsTo": "http://mlcommons.org/croissant/1.0",
+      "creator": [
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Meng Yu"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Deng Ligao"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Xi Zhihao"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Chen Jiansheng"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Chen Jingbo"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Yue Anzhi"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Liu Diyou"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Li Kai"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Wang Chenhao"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/017zhmm22",
+              "@type": "sc:Organization",
+              "name": "西安交通大学"
+            }
+          ],
+          "name": "Li Kaiyu"
+        },
+        {
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "deng yu peng"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0038-9816",
+          "@type": "sc:Person",
+          "affiliation": [
+            {
+              "@id": "https://ror.org/0419fj215",
+              "@type": "sc:Organization",
+              "name": "中国科学院空天信息创新研究院"
+            },
+            {
+              "@id": "CAS_空天院",
+              "@type": "sc:Organization",
+              "name": "Institute of Remote Sensing and Digital Earth"
+            }
+          ],
+          "name": "Sun Xian"
+        }
+      ],
+      "datePublished": "2025-10-15T00:23:33.968Z",
+      "description": "With the continuous development of remote sensing technology and its application requirements, higher requirements have been put forward for the accuracy and expression of land cover extraction and mapping. The traditional pixel based grid classification results have problems such as jagged edges and inconsistent border connections across image frames, making it difficult to directly express topological relationships such as road intersections and building adjacency. In subsequent applications, additional manual vectorization processing is often required to support GIS analysis, resulting in high process costs and low efficiency. Object level vector modeling expresses land features in vector forms such as &quot;surfaces, lines, and points&quot;, which is naturally suitable for GIS and surveying applications. It can be directly used for area and length measurement, network connectivity analysis, and spatiotemporal change updates. To achieve this technological leap, there is an urgent need for high-quality datasets with large-scale, multi scenario, and standardized annotation as support. IRSAMap was born to provide a standardized data foundation for the research and application of vectorization methods. ",
+      "identifier": "https://doi.org/10.57760/sciencedb.j00240.00047",
+      "inLanguage": "en_US",
+      "includedInDataCatalog": {
+        "@id": "https://www.scidb.cn",
+        "@type": "sc:DataCatalog",
+        "@url": "http://www.scidb.cn",
+        "name": "Science Data Bank"
+      },
+      "keywords": [
+        "landcover",
+        "vector mapping",
+        " remote sensing"
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "name": "IRSAMap:Towards Large-Scale, High-Resolution Land Cover Map Vectorization",
+      "publisher": {
+        "@type": "sc:Organization",
+        "@url": "http://www.scidb.cn",
+        "name": "Science Data Bank"
+      },
+      "size": {
+        "@type": "sc:QuantitativeValue",
+        "unitText": "bytes",
+        "value": 11347439496
+      },
+      "url": "https://doi.org/10.57760/sciencedb.j00240.00047",
+      "version": "1.0.0"
+    }
+  ]
+}

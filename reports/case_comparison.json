@@ -1,0 +1,236 @@
+{
+  "samples": [
+    {
+      "id": "377_x0512_y0512",
+      "official": {
+        "mIoU": 0.4564568564927991,
+        "pixel_accuracy": 0.702850341796875,
+        "class_IoU": [
+          0.6605263157894737,
+          0.19936366910793613,
+          0.2633695914914189,
+          0.7025678495823678,
+          null
+        ],
+        "coverage": 1.0
+      },
+      "finetuned": {
+        "mIoU": 0.6643411634390172,
+        "pixel_accuracy": 0.9081306457519531,
+        "class_IoU": [
+          0.8104650004978592,
+          0.35189463955637706,
+          0.5486684755300975,
+          0.9463365381717351,
+          null
+        ],
+        "coverage": 1.0
+      },
+      "gain_pp": 20.788430694621805
+    },
+    {
+      "id": "389_x0000_y0512",
+      "official": {
+        "mIoU": 0.40608741440898455,
+        "pixel_accuracy": 0.7294044494628906,
+        "class_IoU": [
+          null,
+          0.4581108694219234,
+          0.08108790705750502,
+          0.11842365180746692,
+          0.9667272293490429
+        ],
+        "coverage": 1.0
+      },
+      "finetuned": {
+        "mIoU": 0.7439287050719656,
+        "pixel_accuracy": 0.9449996948242188,
+        "class_IoU": [
+          null,
+          0.7897756803392861,
+          0.25703807571998705,
+          0.9412215992918265,
+          0.987679464936763
+        ],
+        "coverage": 1.0
+      },
+      "gain_pp": 33.78412906629811
+    },
+    {
+      "id": "673_x0512_y0000",
+      "official": {
+        "mIoU": 0.40849185016728884,
+        "pixel_accuracy": 0.615509033203125,
+        "class_IoU": [
+          0.4851024208566108,
+          0.27096800096358453,
+          0.028722088405702752,
+          0.6162022369641701,
+          0.641464503646376
+        ],
+        "coverage": 1.0
+      },
+      "finetuned": {
+        "mIoU": 0.7264900990252972,
+        "pixel_accuracy": 0.8549232482910156,
+        "class_IoU": [
+          0.7587719298245614,
+          0.6055868052245209,
+          0.6255127932842244,
+          0.8659620513702937,
+          0.7766169154228856
+        ],
+        "coverage": 1.0
+      },
+      "gain_pp": 31.79982488580083
+    }
+  ],
+  "selected": {
+    "id": "673_x0512_y0000",
+    "official": {
+      "mIoU": 0.40849185016728884,
+      "pixel_accuracy": 0.615509033203125,
+      "class_IoU": [
+        0.4851024208566108,
+        0.27096800096358453,
+        0.028722088405702752,
+        0.6162022369641701,
+        0.641464503646376
+      ],
+      "coverage": 1.0
+    },
+    "finetuned": {
+      "mIoU": 0.7264900990252972,
+      "pixel_accuracy": 0.8549232482910156,
+      "class_IoU": [
+        0.7587719298245614,
+        0.6055868052245209,
+        0.6255127932842244,
+        0.8659620513702937,
+        0.7766169154228856
+      ],
+      "coverage": 1.0
+    },
+    "gain_pp": 31.79982488580083
+  },
+  "selection": "p95 native-eight per-image mIoU among test crops with >=4 GT classes; selected before original inference",
+  "official_checkpoint_sha256": "42f35412bc78a5b729650f8dd13fdf745b900534e8a4805200decc992a99f27a",
+  "finetuned_step": 25000,
+  "optimizer_used": false,
+  "weights_changed": false,
+  "native_eight_selected": {
+    "mIoU": 0.7060162342036386,
+    "pixel_accuracy": 0.8332710266113281,
+    "class_IoU": [
+      null,
+      0.6448871066166856,
+      0.8247218548489536,
+      0.7766169154228856,
+      0.7587719298245614,
+      0.6055868052245209,
+      null,
+      0.6255127932842244
+    ],
+    "absent_class_policy": "exclude only classes with zero ground-truth and prediction union",
+    "gt_present_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "prediction_present_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ]
+  },
+  "visualization": {
+    "ground_truth": "official rvwsb labels mapped to eight training classes",
+    "official_prediction": "native five classes",
+    "finetuned_prediction": "native eight classes",
+    "classes_eight": [
+      "farmland",
+      "tree",
+      "grass",
+      "water",
+      "building",
+      "road_area",
+      "sport",
+      "bareland"
+    ],
+    "palette_eight": [
+      [
+        255,
+        253,
+        145
+      ],
+      [
+        32,
+        216,
+        109
+      ],
+      [
+        1,
+        252,
+        119
+      ],
+      [
+        20,
+        197,
+        246
+      ],
+      [
+        210,
+        75,
+        97
+      ],
+      [
+        255,
+        200,
+        1
+      ],
+      [
+        255,
+        156,
+        95
+      ],
+      [
+        204,
+        181,
+        206
+      ]
+    ],
+    "palette_five": [
+      [
+        210,
+        75,
+        97
+      ],
+      [
+        255,
+        200,
+        1
+      ],
+      [
+        204,
+        181,
+        206
+      ],
+      [
+        32,
+        216,
+        109
+      ],
+      [
+        20,
+        197,
+        246
+      ]
+    ]
+  }
+}

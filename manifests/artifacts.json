@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "release": "v1.0.0",
+  "model": {
+    "repo_id": "Flash2718/acpv-net-irsamap8",
+    "revision": "d9e58de8e64e735457dec8f3aed094394a9090ae",
+    "files": {
+      "model.pth": {
+        "bytes": 533826731,
+        "sha256": "1d444768cf06977149d91efbee158d740e1d3d44acaea77317abf0cb9b08dece"
+      },
+      "training_checkpoint.pth": {
+        "bytes": 1340490069,
+        "sha256": "e83570ad31a9c710e66c109e81ab59fb57fe463ac76d80d536fe245e7a43f9aa"
+      }
+    }
+  },
+  "dataset": {
+    "repo_id": "Flash2718/irsamap-acpv8-v3",
+    "revision": "main",
+    "status": "uploading; final v1.0.0 will pin a completed revision"
+  },
+  "dependencies": {
+    "official": {
+      "url": "https://huggingface.co/HeinzJiao/deventer512_vmamba-s_m_vh-ldm_kl4_b8/resolve/main/deventer512_vmamba-s_m_vh-ldm_kl4_b8.zip",
+      "target": "sources/acpv_official/model_iter_0160000.pth",
+      "sha256": "42f35412bc78a5b729650f8dd13fdf745b900534e8a4805200decc992a99f27a",
+      "zip_member_suffix": "model_iter_0160000.pth"
+    },
+    "vae": {
+      "url": "https://ommer-lab.com/files/latent-diffusion/kl-f4.zip",
+      "target": "sources/kl-f4/model.ckpt",
+      "sha256": "76e617c8b69d692f0a2b8bdfe2ee15ba2460a74645fd8ce965de722cc137ee7a",
+      "zip_member_suffix": "model.ckpt"
+    }
+  }
+}

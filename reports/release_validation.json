@@ -1,0 +1,19 @@
+{
+  "raw_regeneration_originals": 1,
+  "raw_regeneration_crops": [
+    "673_x0000_y0000",
+    "673_x0512_y0000",
+    "673_x0000_y0512",
+    "673_x0512_y0512"
+  ],
+  "old_processed_dataset_required": false,
+  "rgb_masks_vertices_equal_training_dataset": true,
+  "strict_model_load": true,
+  "state_tensors": 882,
+  "exported_model_predictions_equal_original_best_cached_predictions": true,
+  "semantic_probe_image": "673_x0512_y0000",
+  "gpu_peak_allocated_bytes": 3525399552,
+  "probe_protocol": "same eight-image batch and softmax-argmax as the cached vector-evaluation masks",
+  "training_updates_performed": 0,
+  "checked_at": "2026-10-15T06:51:42Z"
+}

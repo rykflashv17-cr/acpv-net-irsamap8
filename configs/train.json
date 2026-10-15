@@ -1,0 +1,60 @@
+{
+  "dataset_version": "official-rvwsb-semantic-v3",
+  "classes": [
+    "farmland",
+    "tree",
+    "grass",
+    "water",
+    "building",
+    "road_area",
+    "sport",
+    "bareland"
+  ],
+  "seed": 42,
+  "microbatch": 8,
+  "accumulation": 1,
+  "effective_batch": 8,
+  "amp": "bf16",
+  "pilot": false,
+  "source_commit": "cf28ca7adbabd653d39a7a3847eb160096fb200b",
+  "class_weights": [
+    0.8167595069817359,
+    0.5739884279810065,
+    0.5082666329239541,
+    1.109599949855481,
+    0.7962169070498032,
+    1.1450020785944415,
+    2.5413331646197705,
+    0.5088333319938064
+  ],
+  "training_script": "program/train_irsamap8.py",
+  "resource_limits": {
+    "cpu_cores": 32,
+    "gpu_count": 1,
+    "gpu_GiB": 64,
+    "host_GiB": 64,
+    "project_GB": 130
+  },
+  "schedule": {
+    "head_steps": 1000,
+    "head_lr": 0.0001,
+    "head_warmup": 100,
+    "joint_steps": 30000,
+    "joint_warmup": 500,
+    "backbone_lr": 3e-06,
+    "semantic_lr": 3e-05,
+    "diffusion_lr": 1e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "decay": "cosine",
+    "gradient_clip_norm": 1.0,
+    "loss_weights": {
+      "mask": 1.0,
+      "mask_aux": 0.4,
+      "vertex_noise_l1": 10.0
+    },
+    "ema_decay": 0.9999,
+    "validation_period": 2000,
+    "vector_validation_period": 5000
+  }
+}

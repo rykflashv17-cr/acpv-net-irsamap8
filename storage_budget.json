@@ -1,0 +1,6 @@
+{
+  "stop_new_writes_at_bytes": 130000000000,
+  "filesystem_minimum_available_bytes": 5000000000,
+  "personal_or_fileset_quota_verified": false,
+  "filesystem_hard_quota_enforced": false
+}

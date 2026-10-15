@@ -1,0 +1,19 @@
+{
+  "upstream_repository": "https://github.com/HeinzJiao/ACPV-Net",
+  "upstream_commit": "cf28ca7adbabd653d39a7a3847eb160096fb200b",
+  "official_initial_checkpoint_sha256": "42f35412bc78a5b729650f8dd13fdf745b900534e8a4805200decc992a99f27a",
+  "dataset_version": "official-rvwsb-semantic-v3",
+  "official_dataset_doi": "10.57760/sciencedb.j00240.00047",
+  "best_global_step": 25000,
+  "training_completed_global_step": 31000,
+  "modifications": [
+    "eight-class main/aux classifier heads",
+    "weighted semantic losses",
+    "staged fine-tuning",
+    "IRSAMap D4-aligned data loader",
+    "BF16 checkpoint compatibility",
+    "optional W&B tracking",
+    "PSLG image-edge handling and shared-graph reconstruction",
+    "portable paths and direct-from-original preprocessing"
+  ]
+}

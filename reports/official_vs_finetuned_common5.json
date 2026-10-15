@@ -1,0 +1,200 @@
+{
+  "completed": true,
+  "contract": {
+    "purpose": "same IRSAMap test images, original official model versus frozen fine-tuned predictions",
+    "split": "test",
+    "samples": 3648,
+    "common_classes": [
+      "building",
+      "road",
+      "unvegetated",
+      "vegetation",
+      "water"
+    ],
+    "irsamap_id_to_common_id": [
+      5,
+      3,
+      3,
+      4,
+      0,
+      1,
+      5,
+      2
+    ],
+    "ignored_ground_truth_classes": [
+      "farmland",
+      "sport"
+    ],
+    "unmappable_prediction_id": 5,
+    "unmappable_predictions_on_evaluated_GT": "counted as classification errors",
+    "prediction_method": "standard argmax semantic labels mapped to common classes; no forced renormalization",
+    "class_mapping_source": "official topomapper/upernet_detector_vh_m_ldm.py class-ID dictionary",
+    "original_checkpoint": "<experiment-workspace>/sources/acpv_official/model_iter_0160000.pth",
+    "original_sha256": "42f35412bc78a5b729650f8dd13fdf745b900534e8a4805200decc992a99f27a",
+    "finetuned_checkpoint": "<experiment-workspace>/outputs/irsamap8/formal/best.pth",
+    "finetuned_step": 25000,
+    "finetuned_predictions": "<experiment-workspace>/outputs/irsamap8/formal/test_results/masks",
+    "optimizer_used": false,
+    "model_weights_changed": false,
+    "precision": "bf16",
+    "microbatch": 8,
+    "seed": 42,
+    "dataset_version": "official-rvwsb-semantic-v3"
+  },
+  "official": {
+    "mIoU": 0.48646663962430947,
+    "macro_F1": 0.6451275844992288,
+    "pixel_accuracy": 0.6636537772920702,
+    "class_IoU": {
+      "building": 0.49288525667384736,
+      "road": 0.3648146652136807,
+      "unvegetated": 0.33089106175482313,
+      "vegetation": 0.6060694921071045,
+      "water": 0.6376727223720918
+    },
+    "class_F1": {
+      "building": 0.6603123106353092,
+      "road": 0.534599568002977,
+      "unvegetated": 0.49724740253125227,
+      "vegetation": 0.7547238710224966,
+      "water": 0.7787547703041092
+    },
+    "support_pixels": [
+      119985048,
+      54483812,
+      212538543,
+      380646141,
+      126188324
+    ],
+    "unmappable_prediction_pixels": 0,
+    "confusion_matrix_5_by_6": [
+      [
+        79744680,
+        1028551,
+        35263454,
+        3781425,
+        166938,
+        0
+      ],
+      [
+        1756501,
+        28233363,
+        18127435,
+        6147808,
+        218705,
+        0
+      ],
+      [
+        30633571,
+        19253875,
+        117703370,
+        42763362,
+        2184365,
+        0
+      ],
+      [
+        8093760,
+        2394203,
+        84035132,
+        284167347,
+        1955699,
+        0
+      ],
+      [
+        1322691,
+        230535,
+        5751814,
+        35530512,
+        83352772,
+        0
+      ]
+    ]
+  },
+  "finetuned": {
+    "mIoU": 0.7334488678808178,
+    "macro_F1": 0.8369955956947562,
+    "pixel_accuracy": 0.8571922623342589,
+    "class_IoU": {
+      "building": 0.7290255452385386,
+      "road": 0.5459102871468807,
+      "unvegetated": 0.5831065007884049,
+      "vegetation": 0.8620519335344041,
+      "water": 0.9471500726958605
+    },
+    "class_F1": {
+      "building": 0.8432790912154641,
+      "road": 0.7062638649677508,
+      "unvegetated": 0.736661115974208,
+      "vegetation": 0.9259161014893106,
+      "water": 0.9728578048270475
+    },
+    "support_pixels": [
+      119985048,
+      54483812,
+      212538543,
+      380646141,
+      126188324
+    ],
+    "unmappable_prediction_pixels": 9369631,
+    "confusion_matrix_5_by_6": [
+      [
+        104499535,
+        690961,
+        13293334,
+        1365005,
+        35483,
+        100730
+      ],
+      [
+        543068,
+        41945339,
+        11145303,
+        751872,
+        24745,
+        73485
+      ],
+      [
+        21570020,
+        20117524,
+        154569603,
+        12390312,
+        1906953,
+        1984131
+      ],
+      [
+        1166474,
+        1468358,
+        27251451,
+        342789242,
+        1064370,
+        6906246
+      ],
+      [
+        76780,
+        74935,
+        850909,
+        2490047,
+        122390614,
+        305039
+      ]
+    ]
+  },
+  "mIoU_gain_percentage_points": 24.698222825650827,
+  "pixel_accuracy_gain_percentage_points": 19.353848504218874,
+  "ignored_GT_pixels": 62459444,
+  "evaluated_GT_pixels": 893841868,
+  "evaluated_pixel_fraction": 0.9346864390791508,
+  "finetuned_native8_mIoU_recomputed": 0.659430794414436,
+  "cached_prediction_provenance_verified": true,
+  "samples": 3648,
+  "seconds": 43.68502544797957,
+  "dashboard": "https://wandb.ai/rykflashv17-tsinghua/acpv-net-irsamap8/runs/fij4lkv3",
+  "resource_snapshot": {
+    "storage/project_bytes": 75184299623,
+    "storage/filesystem_available_bytes": 7262152163328,
+    "storage/checkpoint_bytes": 4021493760,
+    "storage/evaluation_and_log_bytes": 407913472,
+    "runtime/process_tree_rss_bytes": 2741694464,
+    "runtime/gpu_peak_allocated_bytes": 3718601216
+  }
+}

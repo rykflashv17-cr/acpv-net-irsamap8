@@ -1,0 +1,4 @@
+Official source: https://github.com/HeinzJiao/ACPV-Net
+Commit: cf28ca7adbabd653d39a7a3847eb160096fb200b
+Local addition: optional W&B monitoring in scripts/train_iter.py and topomapper/utils/wandb_monitor.py
+No training or model adaptation has been performed.

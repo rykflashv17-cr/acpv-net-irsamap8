@@ -1,0 +1,174 @@
+# Model and input normalization only. Use program/train_irsamap8.py for the staged schedule.
+DATALOADER:
+  NUM_WORKERS: 8
+DATASETS:
+  AUGMENTATIONS:
+  - rot0
+  - rot90
+  - rot180
+  - rot270
+  - flip_h
+  - flip_v
+  - flip_diag
+  - flip_anti_diag
+  FACTORY: LatentVertexHeatmapTrainDataset
+  IMAGE:
+    HEIGHT: 512
+    PIXEL_MEAN:
+    - 109.73
+    - 103.832
+    - 98.681
+    PIXEL_STD:
+    - 22.275
+    - 22.124
+    - 23.229
+    TO_255: true
+    WIDTH: 512
+  NUM_CLASSES: 8
+  ORIGIN:
+    HEIGHT: 512
+    WIDTH: 512
+  ROTATE_F: false
+  TARGET:
+    HEIGHT: 128
+    WIDTH: 128
+  TEST:
+  - irsamap8_test_with_latent_vertex_heatmap
+  TRAIN:
+  - irsamap8_train_with_latent_vertex_heatmap
+  VAL:
+  - irsamap8_val_with_latent_vertex_heatmap
+EMA_DECAY: 0.9999
+EMA_USE_NUM_UPDATES: true
+MODEL:
+  AUX_HEAD:
+    ALIGN_CORNERS: false
+    CHANNELS: 256
+    CONCAT_INPUT: false
+    DROPOUT_RATIO: 0.1
+    IN_CHANNELS: 384
+    IN_INDEX: 2
+    NUM_CLASSES: 8
+    NUM_CONVS: 1
+  BACKBONE:
+    DEPTHS:
+    - 2
+    - 2
+    - 15
+    - 2
+    DIMS: 96
+    DOWNSAMPLE_VERSION: v3
+    DROP_PATH_RATE: 0.3
+    FORWARD_TYPE: v05_noz
+    MLP_RATIO: 4.0
+    NORM_LAYER: ln2d
+    OUT_INDICES:
+    - 0
+    - 1
+    - 2
+    - 3
+    PATCHEMBED_VERSION: v2
+    PRETRAINED: null
+    SSM_CONV: 3
+    SSM_CONV_BIAS: false
+    SSM_DT_RANK: auto
+    SSM_D_STATE: 1
+    SSM_RATIO: 2.0
+  DECODE_HEAD:
+    ALIGN_CORNERS: false
+    CHANNELS: 512
+    DROPOUT_RATIO: 0.1
+    IN_CHANNELS:
+    - 96
+    - 192
+    - 384
+    - 768
+    IN_INDEX:
+    - 0
+    - 1
+    - 2
+    - 3
+    NUM_CLASSES: 8
+    POOL_SCALES:
+    - 1
+    - 2
+    - 3
+    - 6
+    UPSAMPLE_METHOD: deconv
+  DEVICE: cuda
+  DUAL_SEG: false
+  EDGE_LATENT_CHANNELS: 3
+  HEAD_SIZE:
+  - - 2
+  JOINT_LATENT: false
+  LOSS:
+    LOSS_EDGE_LATENT: 1.0
+    LOSS_VERTEX_LATENT: 1.0
+    MASK_AUX_LOSS_TYPE: ce
+    MASK_LOSS_TYPE: ce
+    PARCEL_AUX_LOSS_TYPE: ce
+    PARCEL_LOSS_TYPE: ce
+    PARCEL_W_BG: 1.0
+    PARCEL_W_OBJ: 1.0
+    W_BG: 1.0
+    W_OBJ: 1.0
+  LOSS_WEIGHTS:
+    loss_mask: 1.0
+    loss_mask_aux: 0.4
+    loss_vertex_heatmap_l1: 10.0
+  NAME: VMamba
+  OUT_FEATURE_CHANNELS: 256
+  VERTEX_LATENT_CHANNELS: 3
+  coarse_to_fine: false
+  conditioning_key: concat
+  unet_config:
+    params:
+      attention_resolutions:
+      - 8
+      - 4
+      channel_mult:
+      - 1
+      - 2
+      - 2
+      context_dim: null
+      image_size: 128
+      in_channels: 640
+      model_channels: 128
+      num_head_channels: 32
+      num_res_blocks: 1
+      out_channels: 3
+      use_spatial_transformer: false
+    target: topomapper.modules.diffusionmodules.openaimodel.UNetModel
+OUTPUT_DIR: ./outputs/irsamap8/formal
+SOLVER:
+  AMSGRAD: false
+  BACKBONE_LR_MULT: 1.0
+  BASE_LR: 6.0e-05
+  BETAS:
+  - 0.9
+  - 0.999
+  CHECKPOINT_PERIOD: 5000
+  ETA_MIN: 0.0
+  GAMMA: 0.1
+  IMS_PER_BATCH: 8
+  LDM_LR: 2.0e-06
+  LDM_LR_ENABLE: false
+  LDM_PARAM_NAME_KEYWORDS:
+  - ldm
+  - diffusion_unet
+  - denoiser
+  - model
+  LDM_WEIGHT_DECAY: 0.0
+  LR_SCHEDULER: linear_poly
+  MAX_EPOCH: 30
+  MOMENTUM: 0.9
+  OPTIMIZER: ADAMW
+  POLY_POWER: 1.0
+  STATIC_STEP: 25
+  STEPS:
+  - 25
+  TOTAL_ITERS: 160000
+  WARMUP_ITERS: 1500
+  WEIGHT_DECAY: 0.01
+TEST_OUTPUT_DIR: ''
+USE_EMA: true
