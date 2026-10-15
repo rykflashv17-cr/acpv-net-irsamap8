@@ -12,7 +12,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from project_paths import ROOT, SOURCE, DATA, RAW
-sys.path.insert(0,str(ROOT/'program/vendor'))
+sys.path.insert(0,str(Path(__file__).resolve().parent/'vendor'))
 from ldm.modules.diffusionmodules.model import Encoder, Decoder, AttnBlock
 
 CKPT_SHA='76e617c8b69d692f0a2b8bdfe2ee15ba2460a74645fd8ce965de722cc137ee7a'
