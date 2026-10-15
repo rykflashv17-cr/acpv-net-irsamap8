@@ -55,6 +55,8 @@ def main():
     spec=manifest['dataset']
     # Download the complete, revision-pinned list; each file is deleted after verified extraction.
     index=Path(hf_hub_download(spec['repo_id'],'dataset_manifest.json',repo_type='dataset',revision=spec['revision'],local_dir=ROOT/'tmp/dataset_download'))
+    if spec.get('manifest_sha256') and sha256(index)!=spec['manifest_sha256']:
+        raise ValueError('Dataset manifest checksum mismatch')
     details=json.loads(index.read_text());part='core' if args.kind=='dataset-core' else 'latents'
     for entry in details['shards']:
         if entry['component']!=part:continue

@@ -60,7 +60,7 @@ Training:1000 head-only steps followed by30000 joint steps, AdamW, effective bat
 ## Downloads and provenance
 
 - [Fine-tuned model and full training checkpoint](https://huggingface.co/Flash2718/acpv-net-irsamap8)
-- [Prepared dataset](https://huggingface.co/datasets/Flash2718/irsamap-acpv8-v3): upload in progress; the final release will include the complete checksum manifest.
+- [Prepared dataset](https://huggingface.co/datasets/Flash2718/irsamap-acpv8-v3): complete:47 verified archives covering all276006 source files, including152752 latent tensors.
 
 
 The manifest pins model/dataset repository revisions and SHA256 values; the downloader verifies every artifact. Use your own Hugging Face authentication for private repositories.

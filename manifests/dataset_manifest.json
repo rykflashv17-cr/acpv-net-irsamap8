@@ -1,0 +1,447 @@
+{
+  "version": "official-rvwsb-semantic-v3",
+  "source_files": 276006,
+  "source_bytes": 42682708673,
+  "split_crops": {
+    "train": 18468,
+    "val": 1360,
+    "test": 3648
+  },
+  "shards": [
+    {
+      "path": "core/metadata-0000.tar.gz",
+      "component": "core",
+      "split": "metadata",
+      "uncompressed_bytes": 2193,
+      "file_count": 2,
+      "bytes": 1383,
+      "sha256": "90bc7906ffea09962c42c3e3003c8c43e55937f3f8ce6afb7c0bb0e6c81ae3e2"
+    },
+    {
+      "path": "core/test-0000.tar.gz",
+      "component": "core",
+      "split": "test",
+      "uncompressed_bytes": 999971161,
+      "file_count": 5623,
+      "bytes": 763781238,
+      "sha256": "4dcd3483e0d60d93a0210cd81e90cc82278e2da72781ec9921aad44ccb915754"
+    },
+    {
+      "path": "core/test-0001.tar.gz",
+      "component": "core",
+      "split": "test",
+      "uncompressed_bytes": 759683353,
+      "file_count": 13530,
+      "bytes": 657307759,
+      "sha256": "0109312c7f6ff791e6a329d54450a0f3ebcc621a1a0d078b9c182fe339bb6d4b"
+    },
+    {
+      "path": "core/train-0000.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999916743,
+      "file_count": 9448,
+      "bytes": 245849761,
+      "sha256": "4f7d01e278be4eefc9739d705857988470ef1820453c7a60880ddf5046b0f80e"
+    },
+    {
+      "path": "core/train-0001.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999963999,
+      "file_count": 9103,
+      "bytes": 269017099,
+      "sha256": "ef5fdb82df334a1065975ea0d2aa5271b0ee58bd32250c0c995fb7dc8fdfe5f8"
+    },
+    {
+      "path": "core/train-0002.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999847045,
+      "file_count": 2646,
+      "bytes": 1000248301,
+      "sha256": "4ff28bf80b444c425700e80f038b6a86ded9917ddb6339348da310d9fece95d1"
+    },
+    {
+      "path": "core/train-0003.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999768596,
+      "file_count": 2621,
+      "bytes": 1000254107,
+      "sha256": "202747ce1c558feed6771c5107e56c351a025998ae9bae174f40c406171d7bf6"
+    },
+    {
+      "path": "core/train-0004.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999961541,
+      "file_count": 2580,
+      "bytes": 1000370021,
+      "sha256": "3f99ec18c8ce2e01a4faf9cfdcdcf12cb690d77706d18d58b3eff2361bf7871c"
+    },
+    {
+      "path": "core/train-0005.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999709364,
+      "file_count": 2651,
+      "bytes": 1000133504,
+      "sha256": "2ba856a992e3a41de6b4622c5848f5691acebf3e22deca2c9b73967e0863cf9a"
+    },
+    {
+      "path": "core/train-0006.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999731814,
+      "file_count": 2673,
+      "bytes": 1000122507,
+      "sha256": "14d62fa717e8fd69c58108f17e5f764ba9e986327e0a8184274ce508e8817a4e"
+    },
+    {
+      "path": "core/train-0007.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999639915,
+      "file_count": 2608,
+      "bytes": 1000059197,
+      "sha256": "3d7702c80c11b8d68a1897fc643bd80cf517fa99e3c42fad522d1c263e543467"
+    },
+    {
+      "path": "core/train-0008.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 991401002,
+      "file_count": 2606,
+      "bytes": 991796985,
+      "sha256": "d3c29728ac6ff536a0b5d6c2121b83200f773105f728d184f09119cfcf762222"
+    },
+    {
+      "path": "core/train-0009.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 999962470,
+      "file_count": 59701,
+      "bytes": 383595674,
+      "sha256": "b0da1c1a56d73f434873bc3c6acb40f919459eb64715ddb09ec08dde88d6075b"
+    },
+    {
+      "path": "core/train-0010.tar.gz",
+      "component": "core",
+      "split": "train",
+      "uncompressed_bytes": 15309364,
+      "file_count": 321,
+      "bytes": 4061050,
+      "sha256": "f67f8706afd9e1f315876b35853eb2cbc6989c58f2e5ed7df0950c9837e436c3"
+    },
+    {
+      "path": "core/val-0000.tar.gz",
+      "component": "core",
+      "split": "val",
+      "uncompressed_bytes": 631884905,
+      "file_count": 7141,
+      "bytes": 486536769,
+      "sha256": "4860a100cf15f16c010d9c1fd37e80464dcb6297b5dd94b3e6f15ae8d74cabd1"
+    },
+    {
+      "path": "latents/test-0000.tar.gz",
+      "component": "latents",
+      "split": "test",
+      "uncompressed_bytes": 723256696,
+      "file_count": 3648,
+      "bytes": 549222714,
+      "sha256": "245eb1560868d4319ce87873559140e3131b36c8b14266f55659c6f3dec62009"
+    },
+    {
+      "path": "latents/train-0000.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739207866,
+      "sha256": "472f6c169e6d0fd204172f8505d8258f218f17677bfbe2cc1231e33f547231ff"
+    },
+    {
+      "path": "latents/train-0001.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741832375,
+      "sha256": "ac74149e5299e70bbe6ae7eed2bd956ca08eed461ef2c127d18d53f624ae5e69"
+    },
+    {
+      "path": "latents/train-0002.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740087312,
+      "sha256": "1e21da1df106b2360a54327f7fad0b9b037df3b7aec46a43cdc9a48cc8522e29"
+    },
+    {
+      "path": "latents/train-0003.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 742115524,
+      "sha256": "f637c86ac624aa9ce8d4cade29432a569d66827133a9a6488ef9e344babd63db"
+    },
+    {
+      "path": "latents/train-0004.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 738215617,
+      "sha256": "7125fe058536e609ad93f21a15918db8b41326699134244a8af1e883497c3bb9"
+    },
+    {
+      "path": "latents/train-0005.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739188005,
+      "sha256": "40833dcd16c5fad4566505648ca9fde8ecdb0dcf133c3dcb54365b5f2bd0e1c7"
+    },
+    {
+      "path": "latents/train-0006.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740540929,
+      "sha256": "b2610406c788a62b81d20cc2d1d80d9f549425fbfba316bbfa7402e1854503cf"
+    },
+    {
+      "path": "latents/train-0007.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741318714,
+      "sha256": "d23cd64173ff45497e7647ea45de03348d6a757569edb2013364380862ed7e8a"
+    },
+    {
+      "path": "latents/train-0008.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741721688,
+      "sha256": "e9e94096dec2ee24b3f1b6020d683bcaba4b91ebb1504bd233ee97d862a7619b"
+    },
+    {
+      "path": "latents/train-0009.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741525611,
+      "sha256": "703a0ab8e7aa4f6f95ceaa0339ce65c7723768f31de54f336a299e1dda688b26"
+    },
+    {
+      "path": "latents/train-0010.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740217119,
+      "sha256": "f6d5304c01b26ed428b007369422d9fd15be97fa90d23c56a977dcadc950ee22"
+    },
+    {
+      "path": "latents/train-0011.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739505540,
+      "sha256": "5f34f5866d9bea92d74a96468043c5818bd759dc24fb381cfb9f1d3d91d29b8f"
+    },
+    {
+      "path": "latents/train-0012.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741127489,
+      "sha256": "98f950ea6a2b841d58544e908c7558dfd0ffbfd01cd7650a152149a042cd079e"
+    },
+    {
+      "path": "latents/train-0013.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739849995,
+      "sha256": "0160bb0e734332146bf19bf6ffbaff45ee03a7d27b5a25fe2a214b9496a0042f"
+    },
+    {
+      "path": "latents/train-0014.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 742457010,
+      "sha256": "177bf58e82faf2687978845e5d1029c5fbe5ccd13bf73c5f031f82624bf053c4"
+    },
+    {
+      "path": "latents/train-0015.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739060905,
+      "sha256": "0c2ab8561691dd49a5e864c2eb70f8edef1c1689395ea9a274437f35bce7409e"
+    },
+    {
+      "path": "latents/train-0016.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739645798,
+      "sha256": "13767df8257f70b0bcca2085a9df034a3b13257ba630718059c5bb3786b28f31"
+    },
+    {
+      "path": "latents/train-0017.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739717150,
+      "sha256": "ed4b37559de88cc8012641259dfec923a1f5b30521603bcbfe182b466fc286a2"
+    },
+    {
+      "path": "latents/train-0018.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740590125,
+      "sha256": "833b2d82e1d1aa20507c8bc3ba27391702b6eb4b2bc9e0d7bad56974b9199c1f"
+    },
+    {
+      "path": "latents/train-0019.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 742841569,
+      "sha256": "284a068df9b717c7a8a31287623955431de4871b5da159c8ad72a6edc72959e4"
+    },
+    {
+      "path": "latents/train-0020.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 741491795,
+      "sha256": "172ad1994ca0bdf143035420fa904321f8aa281153ad0a4140796d0c5f3ca851"
+    },
+    {
+      "path": "latents/train-0021.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740194175,
+      "sha256": "4aef48382ee4d9b10749734e245d8ef764b01585b4756ae5d3aeb529f8bcf3c0"
+    },
+    {
+      "path": "latents/train-0022.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739713705,
+      "sha256": "afba9748e0e946036c1d81c2e761c78bf83967632a7d9cfe15b8630aae1a94f9"
+    },
+    {
+      "path": "latents/train-0023.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740571010,
+      "sha256": "3f086855477db423ff867486e3e67d405104e1115a40e026e14a6c5f2a2137ed"
+    },
+    {
+      "path": "latents/train-0024.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 738641201,
+      "sha256": "f9d137c921576cc143c705a2068b84d5fb5ba189705b140e6e3144d9a6c15102"
+    },
+    {
+      "path": "latents/train-0025.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 743279986,
+      "sha256": "2da6cae250927808de81adaa35a0eb62f5fef09c9451157320e939da77d0774c"
+    },
+    {
+      "path": "latents/train-0026.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 738967713,
+      "sha256": "f00f0479415cffb65be0ca594dc36a64344fd3516880af033596ec58b7d3e26e"
+    },
+    {
+      "path": "latents/train-0027.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 739053640,
+      "sha256": "516c8db615e042c4bd962ba8a8683ea3c49a88501abd892dbd418c0c8f0f0e94"
+    },
+    {
+      "path": "latents/train-0028.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 999870567,
+      "file_count": 5043,
+      "bytes": 740296785,
+      "sha256": "39b7848f0e01f59c012855b3ad7479b46b6035eabe3cc0c40dfa6b48ae937453"
+    },
+    {
+      "path": "latents/train-0029.tar.gz",
+      "component": "latents",
+      "split": "train",
+      "uncompressed_bytes": 296808693,
+      "file_count": 1497,
+      "bytes": 221203143,
+      "sha256": "9b9e755ac4109b1422d3b257371f910ca050f9bb7438b77378cf4dc9916f66c7"
+    },
+    {
+      "path": "latents/val-0000.tar.gz",
+      "component": "latents",
+      "split": "val",
+      "uncompressed_bytes": 269643376,
+      "file_count": 1360,
+      "bytes": 189751807,
+      "sha256": "629017a4b4d7337a2a4b5f0af3171120e731003d50b4f0d80fd5eee9f84dd3f8"
+    }
+  ],
+  "complete": true,
+  "complete_components": [
+    "core",
+    "latents"
+  ],
+  "license": "cc-by-nc-sa-4.0",
+  "ledger": {
+    "path": "file_checksums.jsonl.gz",
+    "sha256": "85bace74ae2d03a39fcab825dc889bfbbb6997c6d0b6b399303c7a009f3beec9",
+    "bytes": 13421827
+  },
+  "uploaded_archive_bytes": 32236289370
+}

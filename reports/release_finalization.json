@@ -1,0 +1,30 @@
+{
+  "release": "v1.0.0",
+  "model": {
+    "repo_id": "Flash2718/acpv-net-irsamap8",
+    "revision": "f83c1d7a25cc4c06e61fec1977361132ad516a34",
+    "files": {
+      "model.pth": {
+        "bytes": 533826731,
+        "sha256": "1d444768cf06977149d91efbee158d740e1d3d44acaea77317abf0cb9b08dece"
+      },
+      "training_checkpoint.pth": {
+        "bytes": 1340490069,
+        "sha256": "e83570ad31a9c710e66c109e81ab59fb57fe463ac76d80d536fe245e7a43f9aa"
+      }
+    }
+  },
+  "dataset": {
+    "repo_id": "Flash2718/irsamap-acpv8-v3",
+    "revision": "1b03e64deeab087009f0d219874fe0bd64506f6e",
+    "manifest_sha256": "0dd6904df0b9da9f32a9c7b9fded393eefab28dba07cbe328b0b853e427d9933",
+    "shards": 47,
+    "source_files": 276006,
+    "source_bytes": 42682708673,
+    "archive_bytes": 32236289370,
+    "ledger_sha256": "85bace74ae2d03a39fcab825dc889bfbbb6997c6d0b6b399303c7a009f3beec9"
+  },
+  "all_shards_remote_sha256_verified": true,
+  "unique_member_checksums_verified": 276006,
+  "model_and_dataset_public": true
+}
