@@ -48,6 +48,13 @@ CUDA_VISIBLE_DEVICES=0 python program/evaluate.py --split test
 CUDA_VISIBLE_DEVICES=0 python program/compare_official_irsamap8.py
 ```
 
+Resume from the validation-selected full checkpoint after downloading the same data and original initialization dependency:
+
+```bash
+python program/download_artifacts.py resume
+CUDA_VISIBLE_DEVICES=0 python program/train_irsamap8.py --resume weights/training_checkpoint.pth --batch 8 --workers 8
+```
+
 Training:1000 head-only steps followed by30000 joint steps, AdamW, effective batch8, BF16, seed42. Learning rates: backbone3e-6, semantic3e-5, diffusion1e-5. VAE remains frozen. Train loss weights: mainCE1 + auxCE0.4 + noiseL1x10. Selection uses validation only. See [training config](configs/train.json), [data contract](docs/data.md), [environment](docs/environment.md), and [artifact manifest](manifests/artifacts.json).
 
 ## Downloads and provenance

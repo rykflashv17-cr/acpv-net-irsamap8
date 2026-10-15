@@ -1,0 +1,13 @@
+{
+  "public_dataset_download_verified": true,
+  "restored_split": "test",
+  "restored_samples": 3648,
+  "checked_ids": [
+    "673_x0512_y0000",
+    "0_x0000_y0000",
+    "9_x0512_y0512"
+  ],
+  "images_masks_vertices_annotations_sha256_match_source": true,
+  "archive_path_safety_checked": true,
+  "latents_not_required_for_semantic_or_vector_test": true
+}
